@@ -4,32 +4,19 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const NavLinks = [
     {
-      name: "Home",
+      name: "CristopherGaracle",
       Link: "/",
     },
     {
-      name: "Products",
-      Link: "/products",
-    },
-    {
-      name: "Dashboard",
-      Link: "/dashboard",
-    },
-    {
-      name: "Pricing",
-      Link: "/pricing",
+      name: "NowAvailable",
+      Link: "/NowAvailable",
     },
   ];
   return (
     <div className={`header`}>
     {/* Left side */}
-      <div className="leftSection">
-        <img
-          src="/logo.jpeg"
-          alt=""
-          className={`image`}
-          style={{ width: 50, height: 50 }}
-        />
+      <div className="LeftSection">
+        
         {/* Nav links */}
         <div className="Links">
           {NavLinks.map((Data, index) => {
@@ -44,8 +31,24 @@ const Navbar = () => {
       </div>
           {/* Right side */}
       <div className="RightSection">
-        <button className={`Login`}>Login</button>
-        <button className={`SignUp`}>Signup</button>
+        <img
+          src="Logo.jpg"
+          alt="Logo"
+          className={`Logo`}
+          style={{ width: 50, height: 50 }}
+        />
+        <img
+          src="dribbble-ball-mark.jpg"
+          alt=""
+          className={`image`}
+          style={{ width: 50, height: 50 }}
+        />
+        <img
+          src="Logo Linkedin.jpg"
+          alt=""
+          className={`image`}
+          style={{ width: 50, height: 50 }}
+        />
       </div>
 
     </div>
